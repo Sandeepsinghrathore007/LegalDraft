@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LegalDraft - Rent Agreement Generator</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#d5e0f7",
+                        "on-surface": "#181c1e",
+                        "surface-dim": "#d7dadc",
+                        "surface-tint": "#455f88",
+                        "tertiary-fixed": "#ffddba",
+                        "background": "#f7fafc",
+                        "on-secondary-container": "#586377",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#86a0cd",
+                        "surface": "#f7fafc",
+                        "primary-fixed": "#d6e3ff",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "secondary-fixed": "#d8e3fa",
+                        "inverse-on-surface": "#eef1f3",
+                        "on-tertiary-fixed-variant": "#633f0f",
+                        "on-tertiary-container": "#c6955e",
+                        "primary-fixed-dim": "#adc7f7",
+                        "surface-container": "#ebeef0",
+                        "outline": "#74777f",
+                        "tertiary-fixed-dim": "#f2bc82",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "tertiary": "#321b00",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-background": "#181c1e",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#e5e9eb",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#2b1700",
+                        "outline-variant": "#c4c6cf",
+                        "inverse-primary": "#adc7f7",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "primary-container": "#1a365d",
+                        "surface-bright": "#f7fafc",
+                        "surface-variant": "#e0e3e5",
+                        "surface-container-low": "#f1f4f6",
+                        "tertiary-container": "#4f2e00",
+                        "on-primary-fixed": "#001b3c",
+                        "primary": "#002045",
+                        "on-surface-variant": "#43474e",
+                        "on-secondary-fixed": "#111c2c",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary": "#545f72"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="bg-slate-50 dark:bg-slate-900 sticky top-0 z-50">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-[#002045] dark:text-white font-['Manrope']">LegalDraft</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#002045] dark:text-white border-b-2 border-[#002045] pb-1 text-sm font-semibold Inter" href="#">Home</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#002045] transition-colors duration-200 text-sm font-semibold Inter" href="#">About</a>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-6 py-2 rounded-lg font-semibold text-sm transition-transform active:scale-95">Get Started</button>
+</div>
+<div class="md:hidden flex items-center">
+<span class="material-symbols-outlined text-[#002045]">menu</span>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-20 pb-32 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant rounded-full text-xs font-bold tracking-wider">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        LEGALLY VALID IN ALL STATES
+                    </div>
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-primary leading-[1.1] tracking-tight">
+                        Create Rent <br/> Agreement in <span class="text-on-primary-container">Minutes</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl font-medium leading-relaxed">
+                        Say goodbye to complex legal jargon and expensive notary visits. Draft your professional rental contract digitally with verified clauses.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-primary/20 transition-all active:scale-95 flex items-center justify-center gap-2">
+                            Generate Now
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high text-on-surface px-10 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-highest transition-all flex items-center justify-center gap-2">
+                            View Sample
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary-fixed to-secondary-fixed rounded-[2rem] blur-2xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+<div class="relative bg-surface-container-lowest border border-outline-variant/15 rounded-2xl shadow-2xl overflow-hidden aspect-[4/5] md:aspect-square flex items-center justify-center">
+<img alt="Legal document on a desk" class="object-cover w-full h-full opacity-90" data-alt="Close-up of a high-end legal rent agreement document on a clean minimalist desk with professional soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3m2oMtI0k703csMyrPIiwkfqxvYrUtV0I8dqTpDcVqlj7X-1VhdWPpi1K4PbnFUoXYp1XumjBBaFtq7f3OTyG4HQ5Bwv4eNt4hk749JcybPTZBRpzL7jnSzJZtO7XPjkg0e78K7s6rx_Ue94wRm8cay8biFqEAwDb0iYexIGESvV4j6zZ_Wpd5-5N8CFVl0KxnbG3T4jRYP-0KJ4V3er6pBMukYdn0jqFH0SUom6SILWqp0Wp_FevLSVR9M2_D2G1eNAA1-Zmw1OQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section (Bento Grid) -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-4 tracking-tight">Trusted by Professionals</h2>
+<p class="text-on-surface-variant font-medium">Join thousands of landlords and tenants using LegalDraft.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Stat Card -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/5">
+<div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<div class="text-4xl font-extrabold text-primary mb-2">500+</div>
+<p class="text-on-surface-variant font-semibold">Active Users Daily</p>
+</div>
+<!-- Security Card -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/5">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div class="text-2xl font-bold text-primary mb-2">Secure Payment</div>
+<p class="text-on-surface-variant font-medium">All transactions are encrypted with bank-grade 256-bit SSL security protocol.</p>
+</div>
+<!-- Speed Card -->
+<div class="bg-primary text-on-primary p-8 rounded-2xl shadow-xl md:row-span-1">
+<div class="w-12 h-12 bg-on-primary/10 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div class="text-2xl font-bold mb-2">Instant Delivery</div>
+<p class="text-on-primary-container font-medium opacity-90">Draft, review, and download your e-signed document in under 5 minutes.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-extrabold text-primary mb-4 tracking-tight">Simple, Transparent Pricing</h2>
+<p class="text-on-surface-variant font-medium max-w-2xl mx-auto">Choose the plan that fits your needs. No hidden charges or recurring subscriptions.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+<!-- Free Plan -->
+<div class="bg-surface-container-low p-10 rounded-3xl flex flex-col items-center text-center">
+<h3 class="text-xl font-bold text-primary mb-2">Standard</h3>
+<div class="text-5xl font-extrabold text-primary mb-8 tracking-tighter">₹0</div>
+<ul class="space-y-4 mb-10 w-full text-left">
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Basic Rent Agreement Template
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Digital Copy (Watermarked)
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant opacity-50">
+<span class="material-symbols-outlined text-lg">cancel</span>
+                                E-Stamp Paper Inclusion
+                            </li>
+</ul>
+<button class="w-full py-4 bg-surface-container-high text-on-surface font-bold rounded-xl hover:bg-surface-container-highest transition-all">Generate Free</button>
+</div>
+<!-- Premium Plan -->
+<div class="relative bg-primary-container p-10 rounded-3xl flex flex-col items-center text-center shadow-2xl overflow-hidden">
+<div class="absolute top-6 right-6">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase shadow-lg">Most Popular</span>
+</div>
+<h3 class="text-xl font-bold text-on-primary mb-2">Premium</h3>
+<div class="text-5xl font-extrabold text-on-primary mb-2 tracking-tighter">₹99</div>
+<p class="text-on-primary-container text-sm font-medium mb-8">One-time payment</p>
+<ul class="space-y-4 mb-10 w-full text-left">
+<li class="flex items-center gap-3 text-on-primary">
+<span class="material-symbols-outlined text-on-primary-container text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Legally Verified Clause Library
+                            </li>
+<li class="flex items-center gap-3 text-on-primary">
+<span class="material-symbols-outlined text-on-primary-container text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Non-Watermarked PDF Download
+                            </li>
+<li class="flex items-center gap-3 text-on-primary">
+<span class="material-symbols-outlined text-on-primary-container text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Instant Digital E-Stamp Paper
+                            </li>
+<li class="flex items-center gap-3 text-on-primary">
+<span class="material-symbols-outlined text-on-primary-container text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Priority Support 24/7
+                            </li>
+</ul>
+<button class="w-full py-4 bg-primary text-on-primary font-bold rounded-xl shadow-lg hover:shadow-primary/40 transition-all transform hover:-translate-y-1">Download Premium</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 border-t border-outline-variant/10">
+<div class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-[#002045] dark:text-white mb-2">LegalDraft</div>
+<p class="text-sm font-normal Inter text-slate-500 dark:text-slate-400">© 2024 LegalDraft Digital Notary. All rights reserved.</p>
+</div>
+<div class="flex gap-10">
+<a class="text-sm font-normal Inter text-slate-500 dark:text-slate-400 hover:text-[#002045] dark:hover:text-white transition-opacity duration-200 opacity-80 hover:opacity-100" href="#">About</a>
+<a class="text-sm font-normal Inter text-slate-500 dark:text-slate-400 hover:text-[#002045] dark:hover:text-white transition-opacity duration-200 opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="text-sm font-normal Inter text-slate-500 dark:text-slate-400 hover:text-[#002045] dark:hover:text-white transition-opacity duration-200 opacity-80 hover:opacity-100" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

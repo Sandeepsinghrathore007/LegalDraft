@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Manrope", sans-serif;
+}
+
+.Inter {
+  font-family: "Inter", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+}
+
+.signature-line {
+  border-bottom: 1.5px solid #002045;
+}
+
+.watermark {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 100px,
+    rgba(0, 32, 69, 0.03) 100px,
+    rgba(0, 32, 69, 0.03) 200px
+  );
+}
+
+.blur-legal {
+  filter: blur(4px);
+  user-select: none;
+  pointer-events: none;
+}
+
+.editorial-shadow {
+  box-shadow: 0px 20px 40px rgba(24, 28, 30, 0.06);
+}
+
+.glass-badge {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+}
