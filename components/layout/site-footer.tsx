@@ -8,7 +8,7 @@ type SiteFooterProps = {
 
 const footerLinks = [
   { href: "/about", label: "About" },
-  { href: "/privacy", label: "Privacy" },
+  { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms" },
   { href: "/contact", label: "Contact" },
   { href: "/refund-policy", label: "Refund Policy" }
